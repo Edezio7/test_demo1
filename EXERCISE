@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int number;
+    int*dynamicNumber=nullptr;
+    cout<<"Enter the number"<<endl;
+    cin>>number;
+    dynamicNumber=new int;
+    *dynamicNumber=number;
+    cout<<"The value of the dyanamically allocated integer: "<<*dynamicNumber<<endl;
+    string*dynamicName=nullptr;
+    string name;
+    cout<<"Enter the name:"<<endl;
+    cin>>name;
+    *dynamicName=name;
+    cout<<"The value of the dynamically allocated string: "<<*dynamicName<<endl;
+    delete dynamicNumber;
+    delete dynamicName;
+
+    return 0;
+}
