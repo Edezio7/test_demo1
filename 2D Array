@@ -7,7 +7,7 @@ int main() {
     cin >> rows;
     cout << "Enter number of columns:"<<endl;
     cin >> cols;
-    int arr[10][10];
+    int arr[2][2];
     if (rows >2&cols >2) {
         cout << "Error: Array size exceeds the maximum limit of 2 by 2" << endl;
     }
